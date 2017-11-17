@@ -1,13 +1,11 @@
 package com.mangani.beans;
 
-import java.util.Optional;
-
 public class Caminhao {
 	
 	private String modelo;
-    private Optional<Seguro> seguro;
+    private Seguro seguro;
     
-	public Caminhao(String modelo, Optional<Seguro> seguro) {
+	public Caminhao(String modelo, Seguro seguro) {
 		this.modelo = modelo;
 		this.seguro = seguro;
 	}
@@ -19,11 +17,13 @@ public class Caminhao {
 		this.modelo = modelo;
 	}
 
-	public Optional<Seguro> getSeguro() {
+	public Seguro getSeguro() {
 		return seguro;
 	}
 
-	public void setSeguro(Optional<Seguro> seguro) {
+	public void setSeguro(Seguro seguro) {
 		this.seguro = seguro;
 	}
+
+	
 }
