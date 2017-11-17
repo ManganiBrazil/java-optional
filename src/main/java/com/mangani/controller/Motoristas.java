@@ -19,10 +19,12 @@ public class Motoristas {
 		Optional<Motorista> motoristaJoao = Optional.<Motorista>of(new Motorista("João", 40, Optional.ofNullable(caminhao)));
 		Optional<Motorista> motoristaJose = Optional.<Motorista>of(new Motorista("José", 25, Optional.ofNullable(null)));
 		Optional<Motorista> motoristaMangani = Optional.<Motorista>of(new Motorista("Mangani", 39, Optional.ofNullable(null)));
+		Optional<Motorista> motoristaSergio = Optional.<Motorista>of(new Motorista("Sérgio", 39, Optional.ofNullable(null)));
 				
 		motoristas.put("João", motoristaJoao);
 		motoristas.put("José", motoristaJose);
 		motoristas.put("Mangani", motoristaMangani);
+		motoristas.put("Sérgio", motoristaSergio);
 	}
 	
 	public Optional<Motorista> porNome(String nome) {
